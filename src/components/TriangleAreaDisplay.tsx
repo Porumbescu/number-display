@@ -1,4 +1,5 @@
 import React from 'react';
+import { calculateArea } from '../utils/utils';
 
 interface TriangleAreaProps {
     height: number | null;
@@ -8,12 +9,13 @@ interface TriangleAreaProps {
 const TriangleAreaDisplay: React.FC<TriangleAreaProps> = ({ height, width }) => {
     if (height === null || width === null) return null;
 
-    if (height <= 0 || width <= 0) {
-        return <div>Invalid input: Both height and width must be positive numbers.</div>;
+    try {
+        const area = calculateArea(height, width);
+        return <div>Area of the triangle: {area}</div>;
+    } catch (error) {
+        const errorMessage = (error as Error).message;
+        return <div>{errorMessage}</div>;
     }
-
-    const area = 0.5 * height * width;
-    return <div>Area of the triangle: {area}</div>;
 };
 
 export default TriangleAreaDisplay;
