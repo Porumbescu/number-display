@@ -18,7 +18,7 @@ Number Visualizer is a simple React application built with TypeScript. The appli
 
 ## Demo
 
-![Number Visualizer Demo](https://s4.ezgif.com/tmp/ezgif-4-91cc92cb77.gif)
+![Number Visualizer Demo](https://i.imgur.com/abZkQMg.gif)
 
 ## Tests
 
