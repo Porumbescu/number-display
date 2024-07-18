@@ -34,9 +34,8 @@ The project includes unit tests to ensure the functionality of the components an
 - **Triangle Area Input Component**:
   - Calculates the area of the triangle correctly.
   - Does not display invalid input message when fields are empty.
-  - Handles negative input gracefully.
-  - Handles zero input gracefully.
-  - Handles large numbers correctly.
+  - Handles negative input.
+  - Handles zero input.
 
 ### Running the Tests
 
