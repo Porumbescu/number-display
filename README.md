@@ -24,10 +24,23 @@ Number Visualizer is a simple React application built with TypeScript. The appli
 
 The project includes unit tests to ensure the functionality of the components and business logic. The tests are executed using GitHub Actions for continuous integration.
 
+### Test Coverage
+
+- **Number Input Component**:
+  - Renders number sequence up to the entered positive number.
+  - Renders number sequence from a negative number to 0.
+  - Renders number sequence up to a large positive number.
+
+- **Triangle Area Input Component**:
+  - Calculates the area of the triangle correctly.
+  - Does not display invalid input message when fields are empty.
+  - Handles negative input gracefully.
+  - Handles zero input gracefully.
+  - Handles large numbers correctly.
+
 ### Running the Tests
 
 To run the tests locally, use the following command:
 
 ```bash
 npm test
-```
